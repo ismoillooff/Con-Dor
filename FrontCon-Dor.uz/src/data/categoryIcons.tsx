@@ -1,0 +1,72 @@
+import React from 'react';
+import {
+    ShirtIcon, HatIcon, PantsIcon, UmbrellaIcon, BootIcon,
+    SocksIcon, GlovesIcon, HuntingIcon, WatchIcon, HelmetIcon,
+    KnifeIcon, FlashlightIcon, RopeIcon, BinocularsIcon,
+    BackpackIcon, BriefcaseIcon, WalletIcon, DropletIcon,
+    CompassIcon, TentIcon, FirstAidIcon, UtensilsIcon,
+    TargetIcon, ShieldIcon
+} from '../components/Icons';
+
+export const CATEGORY_ICON_MAP: Record<string, React.ReactNode> = {
+    // By Name (Legacy/Fallback)
+    'USTKI KIYIM': <ShirtIcon size={16} />,
+    'BOSH KIYIM': <HatIcon size={16} />,
+    'PASTKI KIYIM': <PantsIcon size={16} />,
+    'YOMG\'IR KIYIM': <UmbrellaIcon size={16} />,
+    'POYABZAL': <BootIcon size={16} />,
+    'PAYPOQ': <SocksIcon size={16} />,
+    'QO\'LQOP': <GlovesIcon size={16} />,
+    'OV KIYIM': <HuntingIcon size={16} />,
+    'AKSESSUARLAR': <WatchIcon size={16} />,
+    'TAKTIK JIHOZLAR': <HelmetIcon size={16} />,
+    'PICHOQLAR VA ASBOBLAR': <KnifeIcon size={16} />,
+    'YORUG\'LIK VA YORITISH': <FlashlightIcon size={16} />,
+    'ARQONLAR VA TO\'RLAR': <RopeIcon size={16} />,
+    'OPTIKA': <BinocularsIcon size={16} />,
+    'RYUKZAKLAR': <BackpackIcon size={16} />,
+    'SUMKALAR': <BriefcaseIcon size={16} />,
+    'BEL SUMKALAR': <WalletIcon size={16} />,
+    'SUV O\'TKAZMAYDIGAN': <DropletIcon size={16} />,
+    'RETRO KOLLEKSIYA': <BackpackIcon size={16} />,
+    'GIDRATSIYA SUMKALARI': <CompassIcon size={16} />,
+    'LAGER VA UXLASH': <TentIcon size={16} />,
+    'FAVQULODDA YORDAM': <FirstAidIcon size={16} />,
+    'DALA OSHXONASI': <UtensilsIcon size={16} />,
+    'SUV VA GIDRATSIYA': <DropletIcon size={16} />,
+
+    // By key (Standardized)
+    'shirt': <ShirtIcon size={16} />,
+    'hat': <HatIcon size={16} />,
+    'pants': <PantsIcon size={16} />,
+    'umbrella': <UmbrellaIcon size={16} />,
+    'boot': <BootIcon size={16} />,
+    'socks': <SocksIcon size={16} />,
+    'gloves': <GlovesIcon size={16} />,
+    'hunting': <HuntingIcon size={16} />,
+    'watch': <WatchIcon size={16} />,
+    'helmet': <HelmetIcon size={16} />,
+    'knife': <KnifeIcon size={16} />,
+    'flashlight': <FlashlightIcon size={16} />,
+    'rope': <RopeIcon size={16} />,
+    'binoculars': <BinocularsIcon size={16} />,
+    'backpack': <BackpackIcon size={16} />,
+    'briefcase': <BriefcaseIcon size={16} />,
+    'wallet': <WalletIcon size={16} />,
+    'droplet': <DropletIcon size={16} />,
+    'compass': <CompassIcon size={16} />,
+    'tent': <TentIcon size={16} />,
+    'first-aid': <FirstAidIcon size={16} />,
+    'utensils': <UtensilsIcon size={16} />,
+    'target': <TargetIcon size={16} />,
+    'shield': <ShieldIcon size={16} />,
+};
+
+export const SECTION_ICON_MAP: Record<string, React.ReactNode> = {
+    'kiyimlar': <ShirtIcon size={18} />,
+    'jihozlar': <TargetIcon size={18} />,
+    'ryukzaklar': <BackpackIcon size={18} />,
+    'omon-qolish': <TentIcon size={18} />,
+    'bushpeak': <CompassIcon size={18} />,
+    'bridgehead': <ShieldIcon size={18} />,
+};

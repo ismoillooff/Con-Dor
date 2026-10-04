@@ -1,0 +1,103 @@
+.discover {
+    padding: var(--section-padding);
+    background: var(--color-bg-alt);
+}
+
+.discover-grid {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.discover-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.discover-item:hover .discover-circle {
+    transform: scale(1.08);
+}
+
+.discover-item:hover .discover-ring {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.discover-item:hover .discover-name {
+    color: var(--color-text);
+}
+
+.discover-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--color-bg-card);
+    border: 2px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: var(--transition-base);
+}
+
+.discover-icon {
+    font-size: 2.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.discover-ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 2px solid var(--disc-color, var(--color-accent));
+    opacity: 0;
+    transition: var(--transition-base);
+}
+
+.discover-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-secondary);
+    transition: var(--transition-base);
+}
+
+@media (max-width: 768px) {
+    .discover-grid {
+        gap: 28px;
+    }
+
+    .discover-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .discover-icon {
+        font-size: 2rem;
+    }
+
+    .discover-name {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .discover-grid {
+        gap: 20px;
+    }
+
+    .discover-circle {
+        width: 76px;
+        height: 76px;
+    }
+
+    .discover-icon {
+        font-size: 1.6rem;
+    }
+}

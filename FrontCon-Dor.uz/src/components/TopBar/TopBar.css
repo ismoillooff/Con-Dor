@@ -1,0 +1,91 @@
+.topbar {
+    background: #050505;
+    border-bottom: 1px solid var(--color-border);
+    padding: 8px 0;
+    font-size: 0.8rem;
+}
+
+.topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-left {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.topbar-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-text-secondary);
+    font-size: 0.78rem;
+}
+
+.topbar-link:hover {
+    color: var(--color-accent);
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.topbar-social a {
+    color: var(--color-text-muted);
+    transition: var(--transition-fast);
+    display: flex;
+}
+
+.topbar-social a:hover {
+    color: var(--color-accent);
+}
+
+.topbar-langs {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.topbar-langs a {
+    padding: 2px 8px;
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.topbar-langs a:hover,
+.topbar-langs a.lang-active {
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 768px) {
+    .topbar-left {
+        gap: 12px;
+    }
+
+    .topbar-link span,
+    .topbar-link:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        display: none;
+    }
+}

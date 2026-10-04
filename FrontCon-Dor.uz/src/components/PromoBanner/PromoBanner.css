@@ -1,0 +1,110 @@
+.promo-banner {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.promo-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0d1a0d 0%, #1a1a1a 40%, #1a0d0d 100%);
+}
+
+.promo-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.promo-text {
+    max-width: 560px;
+}
+
+.promo-label {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(200, 16, 46, 0.12);
+    border: 1px solid rgba(200, 16, 46, 0.25);
+    color: var(--color-accent-light);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    border-radius: var(--radius-xl);
+    margin-bottom: 20px;
+}
+
+.promo-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    background: linear-gradient(180deg, #fff 0%, #999 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.promo-desc {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+.promo-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+/* Decorations */
+.promo-decoration {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.promo-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(200, 16, 46, 0.08);
+}
+
+.promo-circle.c1 {
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    right: -100px;
+}
+
+.promo-circle.c2 {
+    width: 250px;
+    height: 250px;
+    bottom: -80px;
+    left: -60px;
+    border-color: rgba(74, 93, 35, 0.1);
+}
+
+@media (max-width: 768px) {
+    .promo-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promo-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .promo-banner {
+        padding: 70px 0;
+    }
+}

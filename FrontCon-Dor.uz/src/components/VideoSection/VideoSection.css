@@ -1,0 +1,113 @@
+.video-section {
+    position: relative;
+    padding: 140px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.video-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a2510 30%, #2d3a1e 60%, #0a0a0a 100%);
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+
+.video-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    background: linear-gradient(180deg, #fff 0%, #888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.video-desc {
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.video-ctas {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.video-play-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(200, 16, 46, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.video-play-btn:hover {
+    background: rgba(200, 16, 46, 0.4);
+}
+
+.play-ring {
+    position: absolute;
+    inset: -6px;
+    border: 2px solid rgba(200, 16, 46, 0.3);
+    border-radius: 50%;
+    animation: playPulse 2s ease-in-out infinite;
+}
+
+@keyframes playPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-section {
+        padding: 100px 0;
+    }
+
+    .video-title {
+        letter-spacing: 2px;
+    }
+
+    .video-play-btn {
+        width: 52px;
+        height: 52px;
+    }
+}
