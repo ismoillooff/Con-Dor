@@ -2,7 +2,7 @@
 .env
 .env.*
 !.env.example
-
+.gitignore  
 # Python / Django
 __pycache__/
 *.py[cod]
